@@ -1,0 +1,208 @@
+/* ==========================================
+   1. Base & Layout Styles
+   ========================================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#grad1 {
+  background-color: #002cbb;
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 255, 255, 0.788));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Garante que o footer fique embaixo */
+}
+
+.intro-section {
+  padding-top: 100px; /* Aumentado para dar espaço por causa do navbar fixo */
+  flex: 1; /* Faz o conteúdo esticar e empurrar o footer */
+}
+
+#intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto 20px auto;
+  padding: 0 20px;
+}
+
+#intro h1 {
+  color: #1a1d2c;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+#intro p {
+  color: #4a5568;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Container que alinha os 3 blocos lado a lado */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================
+   2. Navigation Bar
+   ========================================== */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0051bb;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 4px 16px; 
+  box-sizing: border-box;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#navbar a:hover {
+  background-color: #00bb38;
+  color: white;
+}
+
+#navbar .nav-right {
+  float: right;
+}
+
+/* Botão de Login */
+#navbar .btn-login {
+  background-color: #ffffff;
+  color: #000c74;
+  margin-top: 8px; 
+  margin-right: 10px;
+  padding: 8px 24px;
+  border-radius: 6px; 
+  font-weight: 700; /* Removido o 'px' incorreto */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Removido o '%' incorreto */
+}
+
+#navbar .btn-login:hover {
+  background-color: #f0f2ff;
+  color: #5c6aff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Logomarca */
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -10px; 
+}
+
+.logo-container img {
+  max-width: 350px; 
+  height: auto;
+  display: inline-block;
+}
+
+/* ==========================================
+   3. Footer (Rodapé)
+   ========================================== */
+.footer {
+  margin-top: 80px;
+  width: 100%;
+  padding: 40px 10%; /* Ajustado o padding para não ficar gigante */
+  background-color: #7d8aff;
+  display: flex;
+  justify-content: space-between; /* Distribui as colunas igualmente */
+  box-sizing: border-box;
+  color: white;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column; /* Faz os links ficarem um abaixo do outro */
+  gap: 10px;
+}
+
+.footer div b {
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #f2f2f2;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #1a202c; /* Muda de cor ao passar o mouse para dar feedback */
+}
+
+/* 1. O CONTAINER: Controla o espaço onde o botão vai ficar */
+.container {
+  height: 200px;
+  width: 100%;
+  border: 3px dashed #7d8aff; /* Uma borda só para você enxergar o container */
+  
+  /* Ativa o Flexbox para alinhar o botão no meio da tela */
+  display: flex; 
+  align-items: center;     /* Centraliza o botão verticalmente */
+  justify-content: center;   /* Centraliza o botão horizontalmente */
+  
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 2. O BOTÃO DE BLOCO: Controla o visual do botão em si */
+.btn-bloco {
+  display: block;
+  width: 100%; /* Faz o botão ocupar toda a largura permitida pelo container */
+  max-width: 400px; /* Opcional: evita que o botão fique gigante em telas muito grandes */
+  
+  border-radius: 8px; /* Cantos arredondados */
+  background-color: #7d8aff; /* Cor de fundo */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  
+  padding: 14px 0;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Efeito ao passar o mouse */
+.btn-bloco:hover {
+  background-color: #5c6aff;
+}
+
+/* Efeito de clique */
+.btn-bloco:active {
+  transform: scale(0.98);
+}
+.container{
+  border: none !important;
+  outline: none !important;
+}
+

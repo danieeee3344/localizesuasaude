@@ -1,0 +1,157 @@
+/* Estilos para a página de Login */
+.login-body {
+    font-family: Arial, sans-serif;
+    background-color: #E0F2FE;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura */
+}
+
+/* Nova classe para centralizar a caixa de login entre o topo e o footer */
+.login-wrapper {
+    flex: 1; /* Faz esse bloco ocupar todo o espaço restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px; /* Evita que o login fique por baixo da navbar fixa */
+    padding-bottom: 20px;
+}
+
+/* Container do Formulário */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-container h2 {
+    color: #1a2a6c;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Grupos de Input (Usuário e Senha) */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Grupo da Senha com espaçamento maior antes do botão */
+.input-group.password-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    color: #1a2a6c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #1a2a6c;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botão Entrar */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a2a6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #111b47;
+}
+
+/* Link de Cadastro */
+.signup-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: Navy;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0051bb;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 4px 16px; 
+  box-sizing: border-box;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#navbar a:hover {
+  background-color: #00bb38;
+  color: white;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: auto; /* Empurra o footer sempre para a última linha da página */
+  width: 100%;
+  padding: 40px 10%; 
+  background-color: #7d8aff;
+  display: flex;
+  justify-content: space-between; 
+  box-sizing: border-box;
+  color: white;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.footer div b {
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #f2f2f2;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #1a202c; 
+}
